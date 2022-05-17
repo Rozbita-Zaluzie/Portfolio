@@ -41,6 +41,7 @@ body {
     border-right: #29292e5b 2px solid;
 
 }
+
 .mainLogo {
     margin: 17px;
 
@@ -224,6 +225,26 @@ body {
     width: 100%;
     height: 4px;
     background-color: rgba(0, 0, 0, 0.37);
+}
+
+
+/* GITHUB STATS*/
+.githubStats {
+    position: fixed;
+
+    bottom: 0px;
+    left: 80px;
+
+    transition: 1s;
+
+    opacity: 0;
+}
+.githubStats img {
+    height: 100px;
+    width: 400px;
+}
+#gitHubButton:hover .githubStats {
+    opacity: 1;
 }
 
 @keyframes copiedToast {
