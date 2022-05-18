@@ -43,27 +43,21 @@
             </div>
             <div class="contactsTop">
                 <a href="https://www.instagram.com/rozbita_zaluzie/"><img src="logos/Instagram_logo.png"></a>
-                <button onclick="openToast()"><img src="logos/Discord_Logo_w.png"></button>
-                <button onclick="openToast()"><img src="logos/email_logo_w.png"></button>
+                <button onclick="openToast(this.id)" id="dc"><img src="logos/Discord_Logo_w.png"></button>
+                <button onclick="openToast(this.id)" id="email"><img src="logos/email_logo_w.png"></button>
             </div>
             <div class="contactsBottom">
                 <a id="gitHubButton" href="https://github.com/Rozbita-Zaluzie"><img src="logos/GitHub_logo.png">
-                    <div class="githubStats">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rozbita-Zaluzie&langs_count=10&layout=compact&theme=dark" />
-                    </div>
                 </a>
             </div>
         </div>
 
-        
-
-        
 
         <div style="display: none" id="toaster">
             <img src="logos/done.svg">
             <h2>Copied</h2>
-            <p>content</p>
-            <div class="timeBar"></div>
+            <p id="toasterContent">content</p>
+            <div class="timeBar" id="timeBar"></div>
             
             
         </div>
